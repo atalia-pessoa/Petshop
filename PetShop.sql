@@ -99,3 +99,10 @@ INSERT INTO ficha (id_pet, id_tutor, id_medico, data_ficha, hora_fica, descrisca
 VALUES('P5', 'T3', 'M2', '17/10/2025', '16:00', 'Paciente extremamente magro, com amenia, iniciar tratamento via ora e dieta para ganho de peso URGENTE');
 
 
+select * from ficha;
+
+select nome from pets where id_tutor = 'T1';
+
+select * from ficha where id_medico = 'M2';
+
+select nome, avg(peso) from pets group by nome having avg(peso) >= 9.0;
